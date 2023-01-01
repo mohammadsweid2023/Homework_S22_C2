@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/xmlsn">
+<link href="https://fonts.googleapis.com/css?family=Tajawal&display=swap" rel="stylesheet">
+</link>
+<html dir="rtl">
+
+</html>
+
+<head>
+    <title>Homework</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="req">
+    <section>
+        <div class="container">
+            <form name="myForm" class="add" id="form" action="/">
+                <h1>إضافة طالب </h1>
+                <hr>
+                <div hidden id="Id"></div><!--رقم التسلسل -->
+                <div class="input-box">
+                    <label class="clo" for="Username">اسم المستخدم : </label>
+                    <input type="text" id="Username" name="Username" required>
+                    <p class="error-text"></p>
+                </div>
+
+                <div class="input-box">
+                    <label class="clo" for="studentName"> اسم الطالب : </label>
+                    <input type="text" id="studentName" name="Name" required>
+                    <p class="error-text"></p>
+                </div>
+
+                <div class="input-box">
+                    <label class="clo" for="dob"> تاريخ الولادة : </label>
+                    <input type="text" id="dob" name="Bdate" placeholder="mm/dd/yyyy" required>
+                    <p class="error-text"></p>
+                </div>
+
+                <div class="input-box">
+                    <label class="clo" for="Program">البرنامج : </label>
+                    <select id="Program" name="Program" type="select" required>
+                        <option value="BIT">BIT</option>
+                        <option value="ITE">ITE</option>
+                        <option value="BAIT">BAIT</option>
+                        <option value="BACT">BACT</option>
+                    </select>
+                </div>
+
+                <div class="input-box">
+                    <label class="clo" for="mobile">الموبايل : </label>
+                    <input type="text" id="mobile" name="Mobile" placeholder="(+963)9######" required>
+                    <p class="error-text"></p>
+                </div>
+
+
+                <div class="input-cap">
+                    <div class="center cap-box">
+                      
+                        <label class="clo" for="captcha">يرجى إدخال رمز الكاباتشا :</label>
+                        <canvas id="captcha" name="captcha" width="200" height="50" ></canvas>
+                        <br>
+                        <input id="textBox" type="text" width="200" height="50" name="text" required maxlength="7"  onload="createCaptcha()" >
+                        <button id="refreshButton" type="button">إعادة المحاولة</button>
+                        <br>
+                    </div>
+                    <p id="output"></p>
+                    <input id="submitButton" class="main-btn" type="submit" value="إضافة">
+                    <hr>
+                    <section class="td">
+                        <h1>جدول بأسماء الطلاب</h1>
+                        <hr>
+                        <div class="output-box">
+                            <label class="clop" for="">البرنامج : </label>
+                            <select name="programs" id="pro-filter">
+                                <option value="ALL" id="ALL" name="All">All</option>
+                                <option value="BIT" id="BIT" name="BIT">BIT</option>
+                                <option value="ITE" id="ITE" name="ITE">ITE</option>
+                                <option value="BAIT" id="BAIT" name="BAIT">BAIT</option>
+                                <option value="BACT" id="BACT" name="BACT">BACT</option>
+                            </select>
+                        </div>
+                        <div class="output-box">
+                            <label class="clop" for="">الفرز حسب : </label>
+                            <input class="radio" type="radio" id="number" name="sorting" value="رقم الطالب" />
+                            <label for="number"> رقم الطالب</label>
+                            <input class="radio" type="radio" id="user" name="sorting" value="اسم المستخدم" />
+                            <label for="user"> اسم المستخدم</label>
+                            <input class="radio" type="radio" id="program" name="sorting" value="البرنامج" />
+                            <label for="program"> البرنامج</label>
+                        </div>
+                        <div class="output-box">
+                            <table class="tab">
+                                <thead>
+                                    <tr>
+                                        <td>متسلسل</td>
+                                        <td>اسم المستخدم</td>
+                                        <td>اسم الطالب</td>
+                                        <td>البرنامج</td>
+                                    </tr>
+                                </thead>
+                                <tbody id="table-body">
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="output-box">
+                            <button id="convertButton" class="convert" onclick="convert()">
+                                Convert To JSON
+                            </button>
+                        </div>
+                        <div class="output-box">
+                            <textarea name="Convert To JSON" id="ShowJson" cols="30" rows="10"
+                                class="results__display"></textarea>
+                        </div>
+
+            </form>
+        </div>
+    </section>
+    <script src="./js/myJava.js"></script>
+</body>
+
+</html>
+
+<!--
+THE STUDENTS :
+Reem Kamal Mohammad [Reem_161726]
+snds aljomaa [Snds_193409]
+Peter Dali [Peter_187269]
+Mohammad Ahmad Sweid [Mohammad_216407]
+
+
+-->
