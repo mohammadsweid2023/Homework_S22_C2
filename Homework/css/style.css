@@ -1,0 +1,210 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    margin-top: 12px;
+  /*  box-sizing: border-box; */
+}
+
+
+
+.req {
+    background-color:rgb(241 241 255 );
+
+}
+
+label{
+    font-size: 22px;
+}
+
+.req form.add   {
+    width: 74%;
+    margin: auto;
+    padding: 2rem;
+    background-color:rgb(255, 255, 255);
+    border: 4px solid rgb(241 89 33);
+    box-shadow: 0 0 0 0 rgb(241, 89, 33) inset;
+   
+}
+
+.req form.add   > h1 {
+    text-align: center;
+    padding: 0 0 0px 10px;
+    font-size: 40px;
+    border: 2px solid rgb(2 163 175 );
+    margin-left: 200px;
+    margin-right: 200px;
+    background-size: cover;
+}
+
+label.clo{
+    background-color: rgb(241 89 33); 
+    box-shadow: 0 0 0 0 rgb(2 163 175 ) inset;
+   /* padding: 12px;***/
+}
+
+.req form.add > hr {
+    border: solid rgb(241 89 33);
+    margin-left: 200px;
+    margin-right: 200px;
+    
+}
+
+.req form.add  .input-box input, .req form select, input {
+    display: inline-block;
+    flex-grow: 1;
+    padding: 12px;
+    border:2px solid rgb(241 89 33);
+    box-shadow: 0 0 0 0 rgb(241, 89, 33) inset; 
+    direction: ltr;
+    outline: none;
+    transition: border-color .3s ease-in-out;
+}
+
+.req form.add .input-box input:focus, .req form select:focus, input:focus, textarea:focus {border-color: var(--blue-color); direction: ltr;}
+.req form.add .input-box label {flex-basis: 150px;}
+.req form.add .input-box .radio label {margin-left: 1rem;}
+.req form.add .input-cap .cap-box {
+    padding: 8px;
+    display: flex;
+    margin-left: 50px;
+    margin-right: -8px;
+}
+
+
+
+
+.req form.add .input-cap .cap-box canvas {
+    background: #fff;
+    border: solid  rgb(241 89 33); 
+}
+
+.req form.add .input-box label {
+    width: 150px;
+    display: inline-block;
+    text-align: center;
+    padding: 8px;
+}
+
+
+.req form.add .error-text {
+    color: red;
+    font-size: 12px;
+    display: inline-block;
+    direction: ltr;
+}
+
+.req form.add .input-cap .cap-box button {
+    padding: .6rem 1rem;
+}
+.incorrectCaptcha{
+    color: red;
+    margin-right: 421px;
+    margin-top: -4px;
+}
+
+
+
+body {font-family: 'Tajawal&display', sans-serif; overflow-x: hidden;}
+
+.container {width: 1024px; margin: auto;}
+section {padding: 2rem 0;}
+
+
+
+
+  /**** THE STUDENTS :
+  //Reem Kamal Mohammad [Reem_161726]
+  //snds aljomaa [Snds_193409]
+  //Peter Dali [Peter_187269]
+  //Mohammad Ahmad Sweid [Mohammad_216407]
+  ****/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*dsdsdsdsdsdsdsd*/
+
+.req form.add section.td   > h1 {
+    text-align: center;
+    padding: 0 0 0px 10px;
+    font-size: 40px;
+    border: 2px solid rgb(2 163 175 );
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.req form.add .td > hr {
+    border: solid rgb(241 89 33);
+    margin-left: 200px;
+    margin-right: 200px;
+    
+}
+
+
+.req form.add section.td .output-box .clop {
+     padding: 8px;
+    background-color: rgb(241 89 33);
+    text-align: center;
+    margin-left: 41px;
+    width: 150px;
+    display: inline-block;
+}
+
+.req form.add section.td .output-box .radio{
+    margin-left: -25px;
+    width: 75px;
+}
+
+.req form.add .output-box .tab{
+    width: 70%;
+    
+}
+
+.req form.add .output-box .tab td{
+    padding: 10px;
+    background-color: rgb(201, 202, 204)
+
+}
+
+.req form.add .output-box .tab thead td{
+    background-color: rgb(241 89 33);
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+}
+
+.req form.add .output-box textarea{
+    direction: ltr;
+    font-size: large;
+    width: 472px;
+    height: 388px;
+
+   
+}
+.req form.add .output-box .convert{
+    margin-bottom: -14px;
+    margin-right: 342px;
+}
